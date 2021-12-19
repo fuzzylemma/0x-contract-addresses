@@ -1,0 +1,73 @@
+{
+  "_from": "@0x/contract-addresses@^6.10.0",
+  "_id": "@0x/contract-addresses@6.10.0",
+  "_inBundle": false,
+  "_integrity": "sha512-/F6nnoczV5HaKzG0TvnlEitr9lpAO5XB7A/19nbCYWs+08G19m3n14tca/tg0mbBuLqcsqWsKXZucgD/hPJkrw==",
+  "_location": "/@0x/contract-addresses",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@0x/contract-addresses@^6.10.0",
+    "name": "@0x/contract-addresses",
+    "escapedName": "@0x%2fcontract-addresses",
+    "scope": "@0x",
+    "rawSpec": "^6.10.0",
+    "saveSpec": null,
+    "fetchSpec": "^6.10.0"
+  },
+  "_requiredBy": [
+    "/",
+    "/@0x/asset-swapper",
+    "/@0x/contract-wrappers",
+    "/@0x/contracts-coordinator",
+    "/@0x/contracts-test-utils",
+    "/@0x/migrations",
+    "/@0x/order-utils",
+    "/@0x/protocol-utils",
+    "/@0x/token-metadata"
+  ],
+  "_resolved": "https://registry.npmjs.org/@0x/contract-addresses/-/contract-addresses-6.10.0.tgz",
+  "_shasum": "e1cb00a4b5f3509a96a6bd438be59abcf2fa2157",
+  "_spec": "@0x/contract-addresses@^6.10.0",
+  "_where": "/home/bbetts/dev/smartpassnft/research/0x-api",
+  "bugs": {
+    "url": "https://github.com/0xProject/protocol/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Used to get known addresses of deployed 0x contracts",
+  "devDependencies": {
+    "gitpkg": "git+https://github.com/0xProject/gitpkg.git",
+    "shx": "^0.2.2",
+    "typescript": "4.2.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=6.12"
+  },
+  "gitHead": "dcde12dd706f8abf7c7ea02d5debcc2d6d6df082",
+  "gitpkg": {
+    "registry": "git@github.com:0xProject/gitpkg-registry.git"
+  },
+  "homepage": "https://github.com/0xProject/protocol/tree/main/packages/contract-addresses",
+  "license": "Apache-2.0",
+  "main": "lib/src/index.js",
+  "name": "@0x/contract-addresses",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xProject/protocol.git"
+  },
+  "scripts": {
+    "build": "yarn tsc -b",
+    "build:ci": "yarn build",
+    "clean": "shx rm -rf lib",
+    "publish:private": "yarn build && gitpkg publish"
+  },
+  "version": "6.10.0"
+}
